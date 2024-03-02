@@ -1,5 +1,18 @@
 import random
 
+def gera_lista_aleatoria (tamanho, inicial, final):
+    if (tamanho > final - inicial + 1):
+        print("Tamanho deve ser menor igual ao intervalo")
+        return
+    lista = []
+    atual = 0
+    while atual < tamanho:
+        valor = random.randint(inicial, final)
+        if valor not in lista:
+            lista.append(valor)
+            atual += 1
+    return lista
+
 def geraLista (tamanho, embaralhar = True):
     lista = []
     for i in range (1, tamanho + 1):
@@ -22,5 +35,4 @@ def busca_sequencial (valor, lista):
     #retorno -1 indicando que o valor nao existe na lista
     return - 1
 
-
-
+    
