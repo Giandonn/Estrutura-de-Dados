@@ -1,5 +1,19 @@
 import random
 
+def busca_binaria (valor, lista_ordenada):
+    esquerda = 0
+    direita = len(lista_ordenada) - 1
+    while esquerda <= direita:
+        meio = (esquerda + direita) // 2
+        if (valor == lista_ordenada[meio]):
+            return meio
+        elif valor < lista_ordenada[meio]:
+            direita = meio - 1
+        else:
+            esquerda = meio + 1
+    return - 1
+
+
 def gera_lista_aleatoria (tamanho, inicial, final):
     if (tamanho > final - inicial + 1):
         print("Tamanho deve ser menor igual ao intervalo")
