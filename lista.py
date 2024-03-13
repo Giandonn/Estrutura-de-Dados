@@ -48,9 +48,9 @@ listbox.config(font=fonte_list)
 
 listbox.grid(column=0, row=1)
 
-botao_excluir = ttk.Button(janela, text="Excluir")
+botao_excluir = ttk.Button(frame, text="Excluir")
 botao_excluir["command"] = excluir
-#botao_excluir["style"]
+botao_excluir["style"] = "my.TButton"
 botao_excluir.grid(column=1, row=1)
 
 
