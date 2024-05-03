@@ -9,4 +9,3 @@ while len(pilha) > 0:
     print(f"{elemento}: foi deletado da pilha")
 
 print(pilha)
-
