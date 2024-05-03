@@ -1,14 +1,24 @@
-def verificaParenteses (parenteses) :
+#verificando parenteses
+
+def verificarParenteses (expressao):
     pilha = []
-    if parenteses != "":
-        pilha.append(parenteses)
-        print(pilha)
-    else :
-        print("nao é possivel verificar vazio")
-
-    if pilha[0][0] == "(" and pilha[0][6] == ")":
-        print("parenteses equilibrado")
+    indice = 0
+    while indice < len(expressao):
+        simbolo = expressao[indice]
+        if simbolo == "(":
+            pilha.append(simbolo)
+        else:
+            if len(pilha) == 0:
+                print("expressao nao balanceada")
+                break
+            else:
+                pilha.pop()
+        indice += 1
+    if len(pilha) == 0:
+        print("expressao balanceada")
     else:
-        print("parenteses nao equiblibrado")
+        print("expressao nao balanceada")
 
-verificaParenteses("(teste)")
+expressao1 = ")()"
+print(expressao1)
+verificarParenteses(expressao1)
