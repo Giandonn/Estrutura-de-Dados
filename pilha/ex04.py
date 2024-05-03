@@ -10,7 +10,7 @@ def verificarParenteses (expressao):
         else:
             if len(pilha) == 0:
                 print("expressao nao balanceada")
-                break
+                return
             else:
                 pilha.pop()
         indice += 1
