@@ -3,7 +3,7 @@ def inverter_string (string):
     for letra in string:
         pilha.append(letra)
     while (len(pilha) > 0):
-        elemento = pilha.pop(0)
+        elemento = pilha.pop()
         print(elemento, end="")
 
 palavra = "estrutura"
