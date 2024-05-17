@@ -9,3 +9,10 @@ t1 = (1,2,3)
 t2 = (4,5,6)
 t1 = t1 + t2
 print(t1)
+
+#troca de 2 variaveis
+var1 = 34 
+var2 = 60
+var2 = var2 + var1
+var1 = var2 - var1
+var2= var2 - var1
