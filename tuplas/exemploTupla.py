@@ -16,3 +16,8 @@ var2 = 60
 var2 = var2 + var1
 var1 = var2 - var1
 var2= var2 - var1
+
+#fazendo a troca com tuplas
+x = (19)
+y = (81)
+(x,y) = (y, x)
