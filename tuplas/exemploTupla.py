@@ -21,3 +21,8 @@ var2= var2 - var1
 x = (19)
 y = (81)
 (x,y) = (y, x)
+
+def soma_e_media (x, y, z):
+    soma = x + y + z
+    media = soma / 3
+    return (soma, media)
